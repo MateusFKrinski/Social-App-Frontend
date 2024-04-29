@@ -1,11 +1,11 @@
 import axios, {AxiosError, AxiosResponse} from "axios";
 
-type AuthUserReturnedData = {
+interface AuthUserReturnedData {
     user: UserReturnedData
     token: string
 }
 
-export interface UserReturnedData {
+type UserReturnedData = {
     id: string
     email: string
 }
